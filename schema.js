@@ -1,4 +1,4 @@
-const Joi = require('joi');
+const Joi = require("joi");
 // const defaultUrl = "https://images.unsplash.com/photo-1610155180135-015fe55f73cf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMwfHx8ZW58MHx8fHx8";
 
 module.exports.listingSchema = Joi.object({
@@ -15,9 +15,9 @@ module.exports.listingSchema = Joi.object({
     }) .required()
 });
 
-// module.exports.reviewSchema = Joi.object({
-//     review: Joi.object({
-//         rating: Joi.number().require().min(1).max(5),
-//         comment: Joi.string().required(),
-//     }).required(),
-// })
+module.exports.reviewSchema = Joi.object({
+    review: Joi.object({
+        rating: Joi.number().required().min(1).max(5),
+        comment: Joi.string().required(),
+    }).required(),
+})
