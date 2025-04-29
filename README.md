@@ -1,3 +1,2 @@
-# Wanderlust
+# WANDERLUST
 
-Major Project
